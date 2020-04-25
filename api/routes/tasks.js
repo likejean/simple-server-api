@@ -18,7 +18,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-    console.log('BODY:', req.body);
+    console.log('BODY}', req.body);
     const task = new Task({
         _id: new mongoose.Types.ObjectId(),
         title: req.body.task_title,
